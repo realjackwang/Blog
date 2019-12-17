@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ASC on Jack's Blog</title><link>https://hugo.wangbj.top/tags/asc/</link><description>Recent content in ASC on Jack's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Jan 2019 15:51:05 +0000</lastBuildDate><atom:link href="https://hugo.wangbj.top/tags/asc/index.xml" rel="self" type="application/rss+xml"/><item><title>ASC上课笔记</title><link>https://hugo.wangbj.top/2019/01/%E5%9F%B9%E8%AE%AD/</link><pubDate>Mon, 14 Jan 2019 15:51:05 +0000</pubDate><guid>https://hugo.wangbj.top/2019/01/%E5%9F%B9%E8%AE%AD/</guid><description>19/1/14 CPU（Central Processing Unit）架构： 冯诺依曼计算机结构
+现代CPU
+a = b + c 编译器：优化 指令时间
+什么是CPU 完成基本的逻辑指令 基本的操作单元
+MAC 乘加指令 a = b*c+d 一个指令周期执行一次乘累加
+ALU(算数逻辑单元) L1(一级缓存) L2 L3
+桌面程序 真正用于数值运算的指令很少
+CPU架构 ###　简单的CPU
+​ 取指 → 译码 → 执行 → 访存 → 写回
+流水线　Pipeline
+内存是很慢的 400周期
+分支预测 Branch Prediction
+分支断定 Predication
+用条件语句替换分支
+提升 IPC(instructions/cycle)
+Add r0,r1 -&amp;gt; r2
+Add_v (r0,r1&amp;hellip;r8) -&amp;gt; r
+超标量（增加流水线宽度）</description></item><item><title>ASC准备工作</title><link>https://hugo.wangbj.top/2019/01/%E9%98%85%E8%AF%BB/</link><pubDate>Sun, 13 Jan 2019 12:51:06 +0000</pubDate><guid>https://hugo.wangbj.top/2019/01/%E9%98%85%E8%AF%BB/</guid><description>ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications 要求 一、学校或院系超级计算机活动简介（5分）
+二、团队介绍（5分）
+三、技术要求（90分）
+设计一个HPC系统（15分）
+HPL和HPCG（15分）
+单图像超分辨率挑战（30分）
+简介
+在本次比赛中，参赛者需要设计一种算法，使用深度学习等SOTA策略对使用双三次核下采样的图像进行4x SR上标。例如。4倍放大后的400x600图像的分辨率为1600x2400。评估将以感知质量感知的方式进行。pim2018[^4]中定义的感知指数(perception index, PI)将用于计算重建的高分辨率图像的质量。PI越低，重建图像的质量越高。Ma和NIQE是两种无参考图像质量度量[^5-6]。 $$ Perceptual \ index = \frac { 1 } { 2 } ( ( 10 - M a ) + N I Q E ) $$ 每队提交80张重建的高分辨率图像进行评分测试。
+对于初始和最终阶段，每个团队还应该提交一个文件夹，其中包含可以重现测试结果的源代码和模型。
+Folder Name Contents Single Image Super Resolution Challenge Root directory HR_images reconstructed high-resolution images script PyTorch source code here model PyTorch model here 评判标准</description></item></channel></rss>

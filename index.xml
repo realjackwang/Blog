@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jack's Blog on Jack's Blog</title><link>https://hugo.wangbj.top/</link><description>Recent content in Jack's Blog on Jack's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 Dec 2019 15:51:06 +0000</lastBuildDate><atom:link href="https://hugo.wangbj.top/" rel="self" type="application/rss+xml"/><item><title>Posts</title><link>https://hugo.wangbj.top/posts/</link><pubDate>Sun, 15 Dec 2019 15:51:06 +0000</pubDate><guid>https://hugo.wangbj.top/posts/</guid><description/></item><item><title/><link>https://hugo.wangbj.top/tips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hugo.wangbj.top/tips/</guid><description>&lt;h2 id="hugo">Hugo有关的坑&lt;/h2>
+&lt;h3 id="htmlmd">html代码在.md文件中无法显示&lt;/h3>
+&lt;p>通过查询&lt;a href="https://gohugo.io/news/0.60.0-relnotes/">Hugo 0.60.0 更新日志&lt;/a>得知内嵌的html代码已经不能正常显示了，所以需要在config.toml中加入如下片段&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="loveit">LoveIt主题有关的坑&lt;/h2>
+&lt;h3 id="heading">无法正常启动&lt;/h3>
+&lt;p>需先将 &lt;code>/themes/LoveIt/exampleSite/&lt;/code> 下的文件拷贝至你的博客根目录&lt;/p>
+&lt;h3 id="heading-1">评论无法正常显示&lt;/h3>
+&lt;p>🌐 &lt;a href="https://github.com/liuzc/LeaveIt#set-production-environment-when-generating-site">运行hugo前需要设定 &lt;code>HUGO_ENV=production&lt;/code> 使得评论有效&lt;/a>&lt;/p>
+&lt;h3 id="valine">valine评论无法去除算数验证&lt;/h3>
+&lt;p>需同时设定notify和verify为false&lt;/p>
+&lt;h3 id="mianmass">无法修改mian.mass&lt;/h3>
+&lt;p>🌐 &lt;a href="https://github.com/liuzc/LeaveIt#hugo-extended-sassscss-version-required">LoveIt主题需要安装hugo-extended才能正常编译&lt;/a>&lt;/p></description></item></channel></rss>

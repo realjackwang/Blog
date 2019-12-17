@@ -1,0 +1,406 @@
+<rss xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>👑 Spencer Woo's Blog</title><link>https://hugo.wangbj.top/posts/</link><description>Recent content in Posts on Jack's Blog</description><webfeeds:icon>https://blog.spencerwoo.com/images/avatar.jpeg</webfeeds:icon><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 Dec 2019 15:51:06 +0000</lastBuildDate><atom:link href="https://hugo.wangbj.top/posts/" rel="self" type="application/rss+xml"/><item><title>利用Github搭建自己的图床-MdPic</title><link>https://hugo.wangbj.top/2019/12/%E5%88%A9%E7%94%A8github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BE%E5%BA%8A-mdpic/</link><pubDate>Sun, 15 Dec 2019 15:51:06 +0000</pubDate><guid>https://hugo.wangbj.top/2019/12/%E5%88%A9%E7%94%A8github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BE%E5%BA%8A-mdpic/</guid><description>&lt;p align="center" class="has-mb-6">
+&lt;img class="not-gallery-item" height="48" width = "48" src="https://i.loli.net/2019/12/14/L3ZzHyqvshx9c2o.png">
+&lt;br> 利用Github搭建自己的图床！
+&lt;br>
+&lt;a href="https://github.com/skycity233/MDPIC">简介&lt;/a> |
+&lt;a href="https://github.com/skycity233/MDPIC/blob/master/README_EN.md">English Version&lt;/a>
+&lt;br>
+&lt;/p>
+&lt;!-- more -->
+&lt;h3 id="-">💿 安装&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>在你的电脑上安装git&lt;/p>
+&lt;p>拥有scoop的同学可以用Power Shell直接安装，没有的可以点击&lt;a href="https://git-scm.com/">下载git安装包&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-shell" data-lang="shell">scoop install git
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>将git连接远程仓库（Github）,&lt;a href="https://www.runoob.com/git/git-remote-repo.html">教程&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>点击&lt;a href="https://github.com/new">此处&lt;/a>新建一个仓库用来存放图片&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>点击此处&lt;a href="https://github.com/skycity233/MDPIC/releases/download/v1.1/mdpic.rar">下载MdPic&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>将你新建的仓库clone到本地&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-shell" data-lang="shell">git clone &lt;span class="o">[&lt;/span>your repository&lt;span class="o">]&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>将下载的rar包解压到你clone的文件夹里&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>完成后，打开&lt;a href="https://github.com/skycity233/MDPIC/blob/master/config.yml">config.yml&lt;/a>将github_username和repository_name修改为你的用户名和仓库名，还可以修改快捷键以及语言。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>点击mdpic.exe开始使用&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="--1">🎁 如何使用&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>复制一张照片到剪贴板，或者使用截图软件截图到剪贴板（例如Snipaste）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>按下F8上传你的图片到你的github（&lt;strong>快捷键可以通过修改config.yml自定义&lt;/strong>）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>上传成功后，会有提示，同时url会返回到你的剪贴板。（&lt;strong>url会瞬间给你，但是github上传还需一定时间，你可以在markdown中先引用，过一会儿github的图片才会显示&lt;/strong>）&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p align="center"">
+&lt;img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215152823895879.gif">
+&lt;br> 使用截图工具上传
+&lt;br>
+&lt;/p>
+&lt;p align="center"">
+&lt;img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215153443403012.gif">
+&lt;br> 复制文件上传
+&lt;br>
+&lt;/p>
+&lt;p align="center"">
+&lt;img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215153443403012.gif">
+&lt;br> 复制多个文件上传
+&lt;br>
+&lt;/p></description></item><item><title>ASC上课笔记</title><link>https://hugo.wangbj.top/2019/01/%E5%9F%B9%E8%AE%AD/</link><pubDate>Mon, 14 Jan 2019 15:51:05 +0000</pubDate><guid>https://hugo.wangbj.top/2019/01/%E5%9F%B9%E8%AE%AD/</guid><description>&lt;h1 id="19114">19/1/14&lt;/h1>
+&lt;p>CPU（Central Processing Unit）架构： &lt;strong>冯诺依曼&lt;/strong>计算机结构&lt;/p>
+&lt;!-- more -->
+&lt;p>现代CPU&lt;/p>
+&lt;p>a = b + c 编译器：优化 指令时间&lt;/p>
+&lt;h3 id="cpu">什么是CPU&lt;/h3>
+&lt;p>完成基本的逻辑指令 基本的操作单元&lt;/p>
+&lt;p>MAC 乘加指令 a = b*c+d 一个指令周期执行一次乘累加&lt;/p>
+&lt;p>ALU(算数逻辑单元) L1(一级缓存) L2 L3&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2019/01/14/5c3beedc4f991.png" alt="s">&lt;/p>
+&lt;h3 id="heading">桌面程序&lt;/h3>
+&lt;p>真正用于数值运算的指令很少&lt;/p>
+&lt;h3 id="cpu-1">CPU架构&lt;/h3>
+&lt;p>&lt;img src="https://i.loli.net/2019/01/14/5c3bf11987047.jpg" alt="x">&lt;/p>
+&lt;p>###　简单的CPU&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2019/01/14/5c3bf1c1452f9.png" alt="">&lt;/p>
+&lt;p>​ 取指 → 译码 → 执行 → 访存 → 写回&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>流水线　Pipeline&lt;/strong>&lt;/p>
+&lt;p>内存是很慢的 400周期&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>分支预测 Branch Prediction&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>分支断定 Predication&lt;/strong>&lt;/p>
+&lt;p>用条件语句替换分支&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>提升 IPC(instructions/cycle)&lt;/strong>&lt;/p>
+&lt;p>Add r0,r1 -&amp;gt; r2&lt;/p>
+&lt;p>Add_v (r0,r1&amp;hellip;r8) -&amp;gt; r&lt;/p>
+&lt;p>超标量（增加流水线宽度）&lt;/p>
+&lt;p>N路超标量&lt;/p>
+&lt;p>问题：N倍资源、旁路网络N^2^&lt;/p>
+&lt;p>Sandy Bridge 超标量&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>指令调度&lt;/strong>
+xor 异或
+xor r1,r2 -&amp;gt; r3
+add r3,r4 -&amp;gt; r4
+sub r5,r2 -&amp;gt; r3
+addi r3,1 -&amp;gt; r1&lt;/p>
+&lt;p>&lt;strong>寄存器重命名&lt;/strong> 替换寄存器
+xor p1,p2 -&amp;gt; p6
+add p6,p4 -&amp;gt; p7
+sub p5,p2 -&amp;gt; p8
+addi p8,1 -&amp;gt; p9
+xor and sub 可以并行执行&lt;/p>
+&lt;p>&lt;strong>乱序执行 Out-of-Order(OoO) Execution&lt;/strong>&lt;/p>
+&lt;p>重排指令，获得最大的吞吐率&lt;/p>
+&lt;p>&lt;strong>OoO Sandy Bridge&lt;/strong>&lt;/p>
+&lt;p>μop 微指令&lt;/p>
+&lt;p>&lt;strong>乱序执行&lt;/strong>&lt;/p>
+&lt;p>+IPC 接近理想状态
+– 面积增加
+– 功耗增加&lt;/p>
+&lt;p>&lt;strong>存储器架构/层次Memory Hierarchy&lt;/strong>&lt;/p>
+&lt;p>存储器越大越慢&lt;/p>
+&lt;p>SRAM、DRAM(断电消失)、Flash、HDD&lt;/p>
+&lt;p>&lt;strong>缓存Caching&lt;/strong>&lt;/p>
+&lt;p>缓存层次Cache Hierarchy&lt;/p>
+&lt;p>硬件管理：L1、L2、L3&lt;/p>
+&lt;p>软件管理：Main memory、Disk&lt;/p>
+&lt;p>缓存一致性&lt;/p>
+&lt;p>&lt;strong>存储器的另外设计考虑&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>分区Banking&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>一致性Coherency&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>控制器Memory Controller&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>CPU内部的并行性&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>线程级并行Thread-Level Parallelism&lt;/strong>&lt;/p>
+&lt;p>栈 先进先出&lt;/p>
+&lt;p>队列&lt;/p>
+&lt;p>&lt;strong>锁、一致性和同一性&lt;/strong>&lt;/p>
+&lt;p>问题: 多线程读写同一块数据
+解决方法: 加锁&lt;/p>
+&lt;p>&lt;strong>结论&lt;/strong>&lt;/p>
+&lt;p>CPU 为串行程序优化&lt;/p>
+&lt;p>缓慢的内存带宽（存储器带宽）将会是大问题&lt;/p>
+&lt;p>并行处理是方向&lt;/p></description></item><item><title>我的电脑上有哪些神奇的软件</title><link>https://hugo.wangbj.top/2019/01/%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A5%9E%E5%A5%87%E7%9A%84%E8%BD%AF%E4%BB%B6/</link><pubDate>Sun, 13 Jan 2019 15:51:06 +0000</pubDate><guid>https://hugo.wangbj.top/2019/01/%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A5%9E%E5%A5%87%E7%9A%84%E8%BD%AF%E4%BB%B6/</guid><description>&lt;blockquote>
+&lt;p>图片暂时借用&lt;a href="https://sspai.com/post/52308">少数派&lt;/a>，之后会更改&lt;/p>
+&lt;/blockquote>
+&lt;!-- more -->
+&lt;ol>
+&lt;li>&lt;a href="https://www.jianshu.com/p/d0e0935b150a">&lt;strong>nvm&lt;/strong>&lt;/a> &lt;strong>Node.js的包管理器&lt;/strong>&lt;/li>
+&lt;li>Node.js &lt;strong>JavaScript运行环境&lt;/strong>&lt;/li>
+&lt;li>chocolate &lt;strong>非开发者包管理器&lt;/strong>&lt;/li>
+&lt;li>scoop &lt;strong>开发者包管理器&lt;/strong>&lt;/li>
+&lt;li>git &lt;strong>版本管理器&lt;/strong>&lt;/li>
+&lt;li>docker &lt;strong>应用容器引擎，虚拟机&lt;/strong>&lt;/li>
+&lt;/ol></description></item><item><title>ASC准备工作</title><link>https://hugo.wangbj.top/2019/01/%E9%98%85%E8%AF%BB/</link><pubDate>Sun, 13 Jan 2019 12:51:06 +0000</pubDate><guid>https://hugo.wangbj.top/2019/01/%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="asc-student-supercomputer-challenge-2019preliminary-contest-notifications">ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications&lt;/h2>
+&lt;!-- more -->
+&lt;h2 id="heading">要求&lt;/h2>
+&lt;p>一、学校或院系超级计算机活动简介（5分）&lt;/p>
+&lt;p>二、团队介绍（5分）&lt;/p>
+&lt;p>三、技术要求（90分）&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>设计一个HPC系统（15分）&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>HPL和HPCG（15分）&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>单图像超分辨率挑战（30分&lt;/strong>）&lt;/p>
+&lt;p>&lt;strong>简介&lt;/strong>&lt;/p>
+&lt;p>在本次比赛中，参赛者需要设计一种算法，使用深度学习等SOTA策略对使用双三次核下采样的图像进行4x SR上标。例如。4倍放大后的400x600图像的分辨率为1600x2400。评估将以感知质量感知的方式进行。pim2018[^4]中定义的感知指数(perception index, PI)将用于计算重建的高分辨率图像的质量。PI越低，重建图像的质量越高。&lt;a href="#Ma">Ma&lt;/a>和&lt;a href="#NIQE">NIQE&lt;/a>是两种无参考图像质量度量[^5-6]。
+$$
+Perceptual \ index = \frac { 1 } { 2 } ( ( 10 - M a ) + N I Q E )
+$$
+每队提交80张重建的高分辨率图像进行评分测试。&lt;/p>
+&lt;p>对于初始和最终阶段，每个团队还应该提交一个文件夹，其中包含可以重现测试结果的源代码和模型。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Folder Name&lt;/th>
+&lt;th>Contents&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Single Image Super Resolution Challenge&lt;/td>
+&lt;td>Root directory&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>HR_images&lt;/td>
+&lt;td>reconstructed high-resolution images&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>script&lt;/td>
+&lt;td>PyTorch source code here&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>model&lt;/td>
+&lt;td>PyTorch model here&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>评判标准&lt;/strong>&lt;/p>
+&lt;p>score = S~PI~ + S~prop~
+$$
+S _ { P I } = \frac { 20 } { \left( P I / P I _ { \min } \right) ^ { 4 } }
+$$&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>参与者应该注意RMSE（Root-Mean-Square Error）应该位于8 &amp;lt;RMSE &amp;lt; 18的范围内，否则S~PI~为0&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>S~prop~是委员会根据参与者的提案给出的分数。最大S~prop~为10。鼓励参与者详细描述他们的神经网络设计和网络性能。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>The participants must use &lt;a href="https://pytorch.org/">PyTorch&lt;/a> framework for this task&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CESM测试（30分）&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>简介&lt;/strong>&lt;/p>
+&lt;p>在气候建模社区广泛使用的模型中，社区地球系统模型(community Earth System Model, CESM)已成为世界上最流行的气候模型之一，广泛应用于气候变化、气候预测和气候变化的各种研究。&lt;/p>
+&lt;p>CESM是一个完全耦合的、社区的、全球气候模型，它提供了最先进的计算机模拟地球的过去。礼物。以及未来的气候状况。CESM是全球大约12个气候模型之一，可以用来模拟地球气候系统的许多组成部分，包括海洋、大气。海冰和陆地覆盖。使用CESM。研究人员现在可以模拟海洋生态系统与温室气体的相互作用:臭氧对气候的影响。尘埃和其他大气化学物质:碳在大气、海洋中的循环。陆地表面:以及温室气体对上层大气的影响。&lt;/p>
+&lt;p>CESM各组成部分的数学原理和算法在参考文献[^1]和[^2]中有详细描述。我们建议使用稳定版本的cesm1.2.2，其源代码可在参考[^3]中获得。关于CESM的安装和使用的更多信息可以从参考[^4]中找到。&lt;/p>
+&lt;p>&lt;strong>评判标准&lt;/strong>&lt;/p>
+&lt;p>评价我们可以使用CESM和RMSE的诊断包来评估模型结果&lt;/p>
+&lt;p>CESM的诊断包可以获得每个变量的气候学和年变异性。&lt;/p>
+&lt;p>我们用500hPa位势高度作为代表。然后计算模型结果与观测数据之间的RMSE
+$$
+\mathrm { RMSE } = \sqrt { \frac { \sum _ { t = 1 } ^ { n } \left( x _ { 1 , t } - x _ { 2 , t } \right) ^ { 2 } } { n } }
+$$&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="heading-1">论文翻译&lt;/h2>
+&lt;h2 id="t32-perceptual-losses-for-real-time-style-transfer-and-super-resolution">T3[2] Perceptual Losses for Real-Time Style Transfer and Super-Resolution&lt;/h2>
+&lt;blockquote>
+&lt;p>参考：&lt;/p>
+&lt;p>&lt;a href="https://www.jianshu.com/p/b728752a70e9">基于感知损失函数的实时风格转换和超分辨率重建 (zhwhong)&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.jianshu.com/p/fe0c149ea806">深度学习可以做哪些有趣的事情？&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="heading-2">简介&lt;/h3>
+&lt;p>**摘要：**我们考虑的图像转换的问题，即将一个输入图像变换成一个输出图像。最近热门的图像转换的方法通常是训练前馈卷积神经网络，将输出图像与原本图像的逐像素差距作为损失函数。并行的工作表明，高质量的图像可以通过用预训练好的网络提取高级特征、定义并优化感知损失函数来产生。我们组合了一下这两种方法各自的优势，提出采用感知损失函数训练前馈网络进行图像转换的任务。本文给出了图像风格化的结果，训练一个前馈网络去解决实时优化问题（Gatys等人提出的），和基于有优化的方法对比，我们的网络产生质量相当的结果，却能做到三个数量级的提速。我们还实验了单图的超分辨率重建，同样采用感知损失函数来代替求逐像素差距的损失函数&lt;/p>
+&lt;h3 id="heading-3">算法&lt;/h3>
+&lt;p>&lt;strong>我们的系统由两部分组成：&lt;/strong>&lt;/p>
+&lt;p>一个&lt;strong>图片转换网络f~w~&lt;/strong>&lt;/p>
+&lt;p>一个&lt;strong>损失网络 φ&lt;/strong>（用来定义一系列损失函数l1, l2, l3）&lt;/p>
+&lt;p>图片转换网络是一个&lt;strong>深度残差网络&lt;/strong>&lt;/p>
+&lt;p>参数是权重W，它把输入的图片x通过映射 y=f~w~(x)转换成输出图片y，每一个损失函数计算一个标量值li(y,y~i~), 衡量输出的y和目标图像y~i~之间的差距。&lt;/p>
+&lt;p>图片转换网络是用&lt;strong>SGD&lt;/strong>训练，使得一系列损失函数的加权和保持下降&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/145616-16427bfcaab71f02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="图2：系统概览。左侧是Generator，右侧是预训练好的vgg16网络(一直固定)">&lt;/p>
+&lt;p>损失网络对比生成网络生成的图片与每一幅训练集中的目标图片&lt;/p>
+&lt;p>损失函数可表示为：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/145616-ca7f24d7d863f854.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="img">&lt;/p>
+&lt;p>&lt;strong>网络设计：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>我们不用任何的池化层，取而代之的是用&lt;strong>步幅卷积&lt;/strong>或微步幅卷积&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>我们的神经网络有&lt;strong>五个残差块&lt;/strong>[42]组成，用了[44]说的结构。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/5300364-f8e8898da3e5c066.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/538/format/webp" alt="img">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>所有的非残差卷积层都跟着一个空间性的batch-normalization和RELU的非线性层，最末的输出层除外。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>最末层使用一个缩放的Tanh来确保输出图像的像素在[0,255]之间。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>第一个和最后一个卷积层使用9×9的核，其他卷积层使用3×3的核。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>**输入和输出：**对于风格转换，输入和输出都是彩色图片，大小3x256x256。对于超分辨率重建，有一个上采样因子f，输出是一个高分辨率的图像3x288x288，输入是一个低分辨率图像 3x288/fx288/f，因为图像转换网络是完全卷积，所以在测试过程中它可以被应用到任何分辨率的图像中。&lt;/p>
+&lt;p>**下采样和上采样：**对于超分辨率重建，有一个上采样因子f，我们用了几个残差块跟着Log2f卷及网络（stride=1/2）。这个处理和[1]中不一样，[1]在把输入放进网络之前使用了双立方插值去上采样这个低分辨率输入。不依赖于任何一个固定的上采样插值函数，微步长卷积允许上采样函数和网络的其他部分一起被训练。&lt;/p>
+&lt;p>&lt;strong>单图超分辨率重建：&lt;/strong>&lt;/p>
+&lt;p>在单图超分辨率重建中，任务是从一个低分辨率的输入，去产生一个高分辨率的输出图片。这是一个固有的病态问题，因为对一个低分辨率图像，有可能对应着很多种高分辨率的图像。当超分辨率因子变大时，这个不确定性会变得更大。对于更大的因子（x4 x8），高分辨率图像中的好的细节很可能只有一丁点或者根本没有出现在它的低分辨率版本中。&lt;/p>
+&lt;p>为了解决这个问题，我们训练了超分辨率重建网络，不使用过去使用的逐像素差损失函数，取而代之的是一个&lt;strong>特征重建损失函数&lt;/strong>（看section 3）以保证语义信息可以从预训练好的损失网络中转移到超分辨率网络。我们重点关注x4和x8的超分辨率重建，因为更大的因子需要更多的语义信息。&lt;/p>
+&lt;p>传统的指标来衡量超分辨率的是PSNR和SSIM，两者都和人类的视觉质量没什么相关的[55,56,57,58,59].PSNR和SSIM仅仅依赖于像素间低层次的差别，并在高斯噪声的相乘下作用，这可能是无效的超分辨率。另外的，PSNR是相当于逐像素差的，所以用PSNR衡量的模型训练过程是让逐像素损失最小化。因此我们强调，这些实验的目标并不是实现先进的PSNR和SSIM结果，而是展示定性的质量差别（逐像素损失函数vs感知损失）&lt;/p>
+&lt;p>**模型细节：**我们训练模型来完成x4和x8的超分辨率重建，通过最小化特征损失（用vgg16在relu2_2层提取出），用了288x288的小块（1万张MSCOCO训练集），准备了低分辨率的输入，用高斯核模糊的（σ=1.0）下采样用了双立方插值。我们训练时bacth-size=4，训练了20万次，Adam，学习速率0.001，无权重衰减，无dropout。作为一个后续处理步骤，我们执行网络输出和低分辨率输入的直方图匹配。&lt;/p>
+&lt;p>**基础：**基本模型我们用的 SRCNN[1] 为了它优秀的表现，SRCNN是一个三层的卷积网络，损失函数是逐像素求差，用的ILSVRC2013数据集中的33x33的图片。SRCNN没有训练到x8倍，所以我们只能评估x4时的差异。&lt;/p>
+&lt;p>SRCNN训练了超过1亿次迭代，这在我们的模型上是不可能实现的。考虑到二者的差异（SRCNN和我们的模型），在数据，训练，结构上的差异。我们训练图片转换网络x4,x8用了逐像素求差的损失函数，这些网络使用相同搞得数据，结构，训练网络去减少lfeat&lt;/p>
+&lt;p>**评测：**我们评测了模型，在标准的集合5，集合6，BSD100数据集，我们报告的PSNR和SSIM[54]，都只计算了在Y通道上的（当转换成YCbCr颜色空间后），跟[1,39]一样。&lt;/p>
+&lt;h3 id="heading-4">结论&lt;/h3>
+&lt;p>在这篇文章中，我们结合了前馈网络和基于优化的方法的好处，通过用感知损失函数来训练前馈网络。我们对风格转换应用了这个方法达到了很好的表现和速度。对超分辨率重建运用了这个方法，证明了用感知损失来训练，能带来更多好的细节和边缘。&lt;/p>
+&lt;p>未来的工作中，我们期望把感知损失函数用在更多其他的图像转换任务中，如上色或者语义检测。我们还打算研究不同损失网络用于不同的任务，或者更多种不同的语义信息的数据集&lt;/p>
+&lt;hr>
+&lt;h2 id="t33-photo-realistic-single-image-super-resolution-using-a-generative-adversarial-network">T3[3] Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network&lt;/h2>
+&lt;h3 id="srgan">网络结构图（SRGAN）&lt;/h3>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-415f53eb0c6ee4ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/539/format/webp" alt="img">&lt;/p>
+&lt;h3 id="heading-5">算法&lt;/h3>
+&lt;p>ISR是高分辨率图像，ILR是低分辨率图像，是由高分辨率图像先加高斯噪声然后经过一个r步长的下采样得到的，所以高低分辨率的图像大小分别是：rW x rH x C和W x H x C。&lt;/p>
+&lt;p>模型的目的就是生成网络G可以将输入的低分辨率图像重构出ISR，所以在生成器时就采用前馈CNN记作Gθ，参数是θ，那么此部分要优化的就是：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-0b599f50ab2dc551.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/305/format/webp" alt="img">&lt;/p>
+&lt;p>和标准GAN一样，模型需要训练下式：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-1ac16d9f1b365ae2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="img">&lt;/p>
+&lt;p>生成网络的结构如下，核心是下面的B残差块部分，重复的残差块用于生成高分辨率图像，然后接着两个亚像素卷积层用于恢复高分辨率图像的尺寸。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-0bdab0f240cde072.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/539/format/webp" alt="img">&lt;/p>
+&lt;p>判别网络的结构如下图，连续的卷积层、BN和Leaky ReLU，紧接着是稠密块和SIGMOD用于对图像分类。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-1e0f0c73c5d4094c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/539/format/webp" alt="img">&lt;/p>
+&lt;p>SRGAN的创新点在于 loss函数分为两部分&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-1d6768bef7c5c714.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/299/format/webp" alt="img">&lt;/p>
+&lt;ul>
+&lt;li>内容损失&lt;/li>
+&lt;li>对抗损失&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>内容损失&lt;/strong>&lt;/p>
+&lt;p>传统的loss都是以像素为单位的MSE，MSE的loss函数使得输出缺乏高频成分，过于光滑不适宜人们阅读。&lt;/p>
+&lt;p>所以本文在基于预训练的VGG19的RELU激活层来定义loss函数：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-7cb65e4ef1ac0b7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/352/format/webp" alt="img">&lt;/p>
+&lt;p>&lt;strong>对抗损失&lt;/strong>&lt;/p>
+&lt;p>生成图像被判别为高分辨率图像的概率：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/8771353-47f6835b6a2876e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/220/format/webp" alt="img">&lt;/p>
+&lt;h3 id="heading-6">结论&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>用均方误差优化SRResNet，能够得到具有很高的峰值信噪比的结果。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在训练好的VGG模型的高层特征上计算感知损失来优化SRGAN，并结合SRGAN的判别网络，能够得到峰值信噪比虽然不是最高，但是具有逼真视觉效果的结果，基于VGG模型高层特征比基于VGG模型低层特征的内容损失能生成更好的纹理细节。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="t34-the-pirm-challenge-on-perceptual-super-resolution">T3[4] THE PIRM CHALLENGE ON PERCEPTUAL SUPER RESOLUTION&lt;/h2>
+&lt;p>将感知失真平面划分为RMSE上阈值定义的三个区域。在每个区域中，获胜的算法都是感知质量最好的算法。&lt;/p>
+&lt;p>&lt;img src="https://www.pirm2018.org/img/regions.svg" alt="img">&lt;/p>
+&lt;h3 id="heading-7">方法&lt;/h3>
+&lt;p>&lt;img src="https://i.loli.net/2019/01/13/5c3b1060ce9c0.png" alt="x">&lt;/p>
+&lt;p>注意，感知指数越低，表示感知质量越好。如果两个提交之间的感知指数存在边际差异(最多相差0.01)，RMSE越低的排名越高。&lt;/p>
+&lt;p>&lt;strong>Regions&lt;/strong> The three regions are defined by
+Region 1: RMSE ≤ 11.5
+Region 2: 11.5 &amp;lt; RMSE ≤ 12.5
+Region 3: 12.5 &amp;lt; RMSE ≤ 16
+We encourage participation in all three regions.&lt;/p>
+&lt;hr>
+&lt;h2 id="t35-making-a-completely-blind-image-quality-analyzer">T3[5] Making a ‘Completely Blind’ Image Quality Analyzer&lt;/h2>
+&lt;div id="Ma">&lt;/div>
+### 简介
+&lt;p>Natural image quality evaluator, &lt;a href="https://blog.csdn.net/mazhitong1020/article/details/80415758">&lt;strong>NIQE&lt;/strong>&lt;/a>——无需利用人眼评分的失真图像进行训练在计算其局部MSCN 归一化图像后, 根据局部活性选择部分图像块作为训练数据, 以广义高斯模型拟合得到模型参数作为特征, 采用多变量高斯模型描述这些特征, 评价过程中利用待评价图像特征模型参数与预先建立的模型参数之间的距离来确定图像质量&lt;/p>
+&lt;p>NIQE质评价模型
+NIQE质量评价模型不需要原始图像的主现评价分数，其在原始图像库中提取图像特征，再利用多元高斯( multivariate Gaussian. MYG)模型进行建模、图像像素归一化，通过分离力一化方法计算一幅图像的归一化亮度。&lt;/p>
+&lt;h3 id="heading-8">算法&lt;/h3>
+&lt;p>假设亮度图像为I（i.j）则其分离归一化计算公式如下:&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2019/01/13/5c3b14a397b0b.png" alt="s">&lt;/p>
+&lt;p>&amp;hellip;&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;h2 id="t36-learning-a-no-reference-quality-metric-for-single-image-super-resolution">T3[6] Learning a No-Reference Quality Metric for Single-Image Super-Resolution&lt;/h2>
+&lt;div id="NIQE">&lt;/div>
+### 简介
+&lt;p>文献中提出了大量的单图像超分辨率算法，但是很少有研究涉及到基于视觉感知的性能评估问题。而大多数超分辨率图像都是用full来计算的。参考指标，有效性不明确，所需的基本事实在实践中并不总是可用的。为了解决这些问题，我们使用大量的超分辨率图像进行人体受试者研究，并提出一个从视觉感知评分中学习的无参考指标。具体来说，我们设计了三种空间域和频域的低阶统计特征来量化超分辨率的伪影，并学习了一种两阶段回归模型，在不参考地面真值图像的情况下预测超分辨率图像的质量分数。大量实验结果表明，该方法能够有效地评估基于人类感知的超分辨率图像的质量。&lt;/p>
+&lt;h3 id="heading-9">算法&lt;/h3>
+&lt;p>我们利用三种统计性质作为特征，包括局部和全局频率变化和空间不连续，以量化伪影和SR图像的质量。每一组统计特征在金字塔上计算，以减轻SR工件的尺度敏感性。图8中显示了该算法学习无参考质量度量的主要步骤。图9显示了每种类型的特性的统计属性的概述&lt;/p>
+&lt;h3 id="-local-frequency-features">局部频率特征 Local Frequency Features&lt;/h3>
+&lt;p>通过对离散余弦变换(DCT)系数的统计，有效地量化了图像退化[35]的程度和类型，并用于自然图像质量评价[23]。由于SR图像是由LR输入产生的，因此该任务可以看作是对LR图像高频分量的恢复。为了量化SR恢复所引入的高频伪影，我们提出将SR图像转换为DCT域，用[23]中的广义高斯分布(GGD)拟合DCT系数。&lt;/p>
+&lt;p>​ $f ( x | \mu , \gamma ) = \frac { 1 } { 2 \Gamma \left( 1 + \gamma ^ { - 1 } \right) } e ^ { - \left( | x - \mu | ^ { \gamma } \right) }$&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2019/01/13/5c3b49ecd350b.png" alt="这是文字" title="图8:建议的无参考度量的主要步骤。对于每个输入的SR mage，利用空间域和频域的统计量作为特征来表示SR图像。将提取的每一组特征在单独的集成回归树中进行训练，利用线性回归模型从大量的视觉感知得分中学习预测质量分数。">&lt;/p>
+&lt;p>图8:建议的无参考度量的主要步骤。对于每个输入的SR mage，利用空间域和频域的统计量作为特征来表示SR图像。将提取的每一组特征在单独的集成回归树中进行训练，利用线性回归模型从大量的视觉感知得分中学习预测质量分数。&lt;/p>
+&lt;h3 id="-global-frequency-features">全局频率特征 Global Frequency Features&lt;/h3>
+&lt;p>​ $p _ { Y } ( y ) = \int \frac { 1 } { ( 2 \pi ) ^ { N / 2 } \left| z ^ { 2 } Q \right| ^ { 1 / 2 } } e ^ { \left( - \frac { Y ^ { T } \Q ^ { - 1 } Y } { 2 z ^ { 2 } } \right) } p _ { z } ( z ) d z$&lt;/p>
+&lt;h3 id="-spatial-features">空间特征 Spatial Features&lt;/h3>
+&lt;p>$\rho = \frac { 2 \sigma _ { x y } + c _ { 0 } } { \sigma _ { x } ^ { 2 } + \sigma _ { y } ^ { 2 } + c _ { 0 } }$&lt;/p>
+&lt;p>###　两阶段回归模型 Two-stage Regression Model&lt;/p>
+&lt;p>$\theta _ { j } ^ { n * } = \underset { \theta _ { j } ^ { n } \in \mathcal { T } _ { j } } { \operatorname { argmax } } I _ { j } ^ { n }$&lt;/p>
+&lt;p>$I _ { j } ^ { n } = \sum _ { x _ { n } \in \mathcal { S } _ { j } } \log \left( \left| \Lambda _ { y } \left( x _ { n } \right) \right| \right) - \sum _ { i \in { L , R } } \left( \sum _ { x _ { n } \in S _ { j } ^ { i } } \log \left( \left| \Lambda _ { y } \left( x _ { n } \right) \right| \right) \right)$&lt;/p>
+&lt;p>因此，我们将这三种特征的输出线性回归到感知得分。并估计最终的质量分数为： $\hat { y } = \sum _ { n } \lambda _ { n } \cdot \hat { y } _ { n }$&lt;/p>
+&lt;p>其中权重$\lambda$是通过最小化学习来的&lt;/p>
+&lt;p>​ $\lambda ^ { * } = \underset { \lambda } { \arg \min } \left( \sum _ { n } \lambda _ { n } \cdot \hat { y } _ { n } - y \right) ^ { 2 }$&lt;/p>
+&lt;hr>
+&lt;h2 id="t41-description-of-the-ncar-community-atmosphere-model-cam-40">T4[1] Description of the NCAR Community Atmosphere Model (CAM 4.0)&lt;/h2>
+&lt;blockquote>
+&lt;p>224页我的天啦&lt;/p>
+&lt;/blockquote>
+&lt;p>&amp;hellip;&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;h2 id="t42-cesm11-coupler-flow-diagram-standard-default-configuration">T4[2] CESM1.1 Coupler Flow Diagram Standard Default Configuration&lt;/h2>
+&lt;p>&amp;hellip;&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;h2 id="t43-cpl7-users-guide">T4[3] CPL7 User’s Guide&lt;/h2>
+&lt;p>&amp;hellip;&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;h2 id="t44-cesm-users-guide">T4[4] CESM User’s Guide&lt;/h2>
+&lt;p>&amp;hellip;&amp;hellip;&lt;/p></description></item></channel></rss>
